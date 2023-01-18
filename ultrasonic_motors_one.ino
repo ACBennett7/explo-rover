@@ -86,7 +86,7 @@ void turnRight() {
 
 
 void backLeft() {
-  Serial.println("Turning left");
+  Serial.println("Backing left");
   digitalWrite(enA, LOW);
   digitalWrite(enB, HIGH);
   analogWrite(pwmA, 150);
@@ -95,7 +95,7 @@ void backLeft() {
 }
 
 void backRight() {
-  Serial.println("Turning right");
+  Serial.println("Backing right");
   digitalWrite(enA, LOW);
   digitalWrite(enB, LOW);
   analogWrite(pwmA, 150);
