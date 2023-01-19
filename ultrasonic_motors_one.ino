@@ -1,3 +1,4 @@
+#include <LiquidCrystal.h>
 #include <IRremote.hpp>
 
 #define echoPin 8
