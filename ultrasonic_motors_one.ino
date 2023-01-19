@@ -2,10 +2,18 @@
 
 #define echoPin 8
 #define trigPin 7
+
 #define pwmA 10
 #define pwmB 11
 #define enA 12
 #define enB 13
+// consider using 74HC595 shift register for LCD and ultrasonic
+#define rs 6
+#define enable 9
+#define d4 5
+#define d5 4
+#define d6 3
+#define d7 2
 
 long duration;
 int distance, dst;
@@ -117,16 +125,19 @@ void stop() {
   delay(500);
 }
 
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// const int left_motor_direction = 13;
-// const int right_motor_direction = 12;
-// const int right_motor_PWM = 10;
-// const int left_motor_PWM = 11;
-// const int pan_servo_pin = 9;
-// const int echoPin = 8;
-// const int triggerPin = 7;
-// const int buzzer = 4;
-// const int tilt_servo_pin = 6;
-// const int left_motor_IR_sensor_pin = 2;
-// const int right_motor_IR_sensor_pin = 3;
+
+/*
+Inputs if using motor hat:
+const int left_motor_direction = 13;
+const int right_motor_direction = 12;
+const int right_motor_PWM = 10;
+const int left_motor_PWM = 11;
+const int pan_servo_pin = 9;
+const int echoPin = 8;
+const int triggerPin = 7;
+const int buzzer = 4;
+const int tilt_servo_pin = 6;
+const int left_motor_IR_sensor_pin = 2;
+const int right_motor_IR_sensor_pin = 3;
+*/
